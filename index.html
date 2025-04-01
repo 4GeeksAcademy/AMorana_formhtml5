@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
+        <title>Formulario</title>
+    </head>
+    
+<body>
+
+<div class="container w-90 mx-auto">
+    <div class="header bg-light border border-muted p-2 rounded mt-4">
+        <h3 class="text-dark">Payment Form Example</h3> 
+    </div>
+    
+    <div class="form-container border border-muted rounded p-4 bg-white">
+        <div class="alert alert-danger text-start mx-auto" style="width: 100%;" role="alert">
+            Some fields are missing
+        </div>
+        <form>
+            <div class="form-row">
+                <div class="col">
+                    <label for="card-number">Card Number #</label>
+                    <input type="text" class="form-control mb-2 border border-muted" id="card-number" placeholder="XXXXXXXXXXXXXXXX">
+                </div>
+                <div class="col">
+                    <label for="cvc">CVC #</label>
+                    <input type="text" class="form-control mb-2 border border-muted" id="cvc" placeholder="0000">
+                </div>
+                
+                
+                <div class="col">
+                    <label for="amount">Amount</label>
+                    <div class="d-flex align-items-center mb-2">
+                        <span class="font-weight-bold">$</span>
+                        <input type="text" class="form-control border border-muted" id="amount" placeholder="Amount">
+                    </div>
+                </div>
+            
+            </div>
+            
+            <div class="form-row">
+                <div class="col">
+                    <label for="first-name">First Name</label>
+                    <input type="text" class="form-control mb-2 border border-muted" id="first-name">
+                </div>
+                <div class="col">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" class="form-control mb-2 border border-muted" id="last-name">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col">
+                    <label for="city">City</label>
+                    <input type="text" class="form-control mb-2 border border-muted" id="city">
+                </div>
+                <div class="col">
+                    <label for="state">State</label>
+                    <input type="text" class="form-control mb-2 border border-muted" id="state" list="european-states" required>
+                    <datalist id="european-states">
+                        <option value="Albania">
+                        <option value="Austria">
+                        <option value="Belgium">
+                        <option value="Bulgaria">
+                        <option value="Croatia">
+                        <option value="Cyprus">
+                        <option value="Czech Republic">
+                        <option value="Denmark">
+                        <option value="Estonia">
+                        <option value="Finland">
+                        <option value="France">
+                        <option value="Germany">
+                        <option value="Greece">
+                        <option value="Hungary">
+                        <option value="Ireland">
+                        <option value="Italy">
+                        <option value="Latvia">
+                        <option value="Lithuania">
+                        <option value="Luxembourg">
+                        <option value="Malta">
+                        <option value="Netherlands">
+                        <option value="Poland">
+                        <option value="Portugal">
+                        <option value="Romania">
+                        <option value="Slovakia">
+                        <option value="Slovenia">
+                        <option value="Spain">
+                        <option value="Sweden">
+                        <option value="United Kingdom">
+                    </datalist>
+                </div>
+                <div class="col">
+                    <label for="postal-code">Postal Code</label>
+                    <input type="text" class="form-control mb-2 border border-muted" id="postal-code">
+                </div>
+            </div>
+           
+            <div class="form-row mb-3 d-flex align-items-start">
+                <div class="col me-3">
+                    <label>We accept: </label>
+                    <div class="d-flex justify-content-start mt-1 bg-secondary text-white rounded col-5">
+                        <div class="form-check me-6">
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="mastercard" value="mastercard">
+                            <label class="form-check-label" for="mastercard">
+                                <i class="fab fa-cc-mastercard" style="font-size: 25px;"></i>
+                            </label>
+                        </div>
+                        <div class="form-check me-6">
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="visa" value="visa">
+                            <label class="form-check-label" for="visa">
+                                <i class="fab fa-cc-visa" style="font-size: 25px;"></i>
+                            </label>
+                        </div>
+                        <div class="form-check me-6">
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="diners" value="diners">
+                            <label class="form-check-label" for="diners">
+                                <i class="fa-brands fa-cc-diners-club" style="font-size: 25px;"></i>
+                            </label>
+                        </div>
+                        <div class="form-check me-6">
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="amex" value="amex">
+                            <label class="form-check-label" for="amex">
+                                <i class="fab fa-cc-amex" style="font-size: 25px;"></i>
+                            </label></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                    <small class="form-text text-muted">Add any notes</small>
+                </div>
+            </div>
+            
+    </div>
+    <div class="header bg-light border border-muted p-2 rounded text-right mb-5">
+        <button type="button" class="btn btn-secondary">Cancel</button>
+        <button type="submit" class="btn btn-primary">Send</button>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
