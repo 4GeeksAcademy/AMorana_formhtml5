@@ -23,17 +23,17 @@
         </div>
         <form>
             <div class="form-row">
-                <div class="col">
+                <div class="col-sm-12 col-md-4">
                     <label for="card-number">Card Number #</label>
                     <input type="text" class="form-control mb-2 border border-muted" id="card-number" placeholder="XXXXXXXXXXXXXXXX">
                 </div>
-                <div class="col">
+                <div class="col-sm-12 col-md-4">
                     <label for="cvc">CVC #</label>
                     <input type="text" class="form-control mb-2 border border-muted" id="cvc" placeholder="0000">
                 </div>
                 
                 
-                <div class="col">
+                <div class="col-sm-12 col-md-4">
                     <label for="amount">Amount</label>
                     <div class="d-flex align-items-center mb-2">
                         <span class="font-weight-bold">$</span>
@@ -44,22 +44,22 @@
             </div>
             
             <div class="form-row">
-                <div class="col">
+                <div class="col-sm-12 col-md-6">
                     <label for="first-name">First Name</label>
                     <input type="text" class="form-control mb-2 border border-muted" id="first-name">
                 </div>
-                <div class="col">
+                <div class="col-sm-12 col-md-6">
                     <label for="last-name">Last Name</label>
                     <input type="text" class="form-control mb-2 border border-muted" id="last-name">
                 </div>
             </div>
 
             <div class="form-row">
-                <div class="col">
+                <div class="col-sm-12 col-md-4">
                     <label for="city">City</label>
                     <input type="text" class="form-control mb-2 border border-muted" id="city">
                 </div>
-                <div class="col">
+                <div class="col-sm-12 col-md-4">
                     <label for="state">State</label>
                     <input type="text" class="form-control mb-2 border border-muted" id="state" list="european-states" required>
                     <datalist id="european-states">
@@ -94,16 +94,16 @@
                         <option value="United Kingdom">
                     </datalist>
                 </div>
-                <div class="col">
+                <div class="col-sm-12 col-md-4">
                     <label for="postal-code">Postal Code</label>
                     <input type="text" class="form-control mb-2 border border-muted" id="postal-code">
                 </div>
             </div>
            
             <div class="form-row mb-3 d-flex align-items-start">
-                <div class="col me-3">
+                <div class="col-sm-12 col-md-6 me-3">
                     <label>We accept: </label>
-                    <div class="d-flex justify-content-start mt-1 bg-secondary text-white rounded col-5">
+                    <div class="d-flex justify-content-start mt-1 bg-secondary text-white rounded col-sm-12 col-md-6">
                         <div class="form-check me-6">
                             <input class="form-check-input" type="radio" name="paymentMethod" id="mastercard" value="mastercard">
                             <label class="form-check-label" for="mastercard">
@@ -129,7 +129,7 @@
                             </label></div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-sm-12 col-md-6">
                     <label for="message" class="form-label">Message</label>
                     <textarea class="form-control" id="message" rows="3"></textarea>
                     <small class="form-text text-muted">Add any notes</small>
